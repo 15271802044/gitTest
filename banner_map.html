@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>从左向右的轮播图</title>
+</head>
+
+<style>
+	*{
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+	img{
+		display:block;
+	}
+	.box{
+		width:400px;
+		height:auto;
+		height:307px;
+		position: relative;
+		margin:100px auto 0 ;
+		border:5px solid #ccc;
+	}
+	.list{
+		position:absolute;
+		left:0;
+		top:0;
+		height:307px;
+		width:400px;
+		overflow:hidden;
+	}
+
+	/*淡入淡出用*/
+	ul{
+		position: absolute;
+		overflow:hidden;
+		width:99999px;
+		height: 100%;
+		left:0;
+		top:0;
+	}
+	ul li{
+		position: absolute;
+		left: 0;
+		top: 0;
+		height:307px;
+		width:400px;
+		opacity: 0;
+	}
+
+	/*向左用*/
+	/*ul{
+		position: absolute;
+		overflow:hidden;
+		width:99999px;
+		left:0;
+		top:0;
+	}
+	ul li{
+		float: left;
+		height:307px;
+		width:400px;
+	}*/
+
+	.list ul li img { width:100%; height:100%;}
+	span{
+		background:url(img/niao/arr.png) 0 0 no-repeat;
+		position: absolute;
+		width:52px;
+		height:52px;
+		top:50%;
+		margin-top:-26px;
+		cursor: pointer;
+	}
+	.l{
+		left:-20px;
+		background:#dd0000;
+	}
+	.r{
+		right:-20px;
+		background:#000000;
+	}
+	ol{
+		position: absolute;
+		bottom:-0px;
+		left:140px;
+	}
+	ol li{
+		float: left;
+		width:13px;
+		height:13px;
+		cursor: pointer;
+		margin-right:10px;
+		background:#fff;
+		border-radius: 6px;
+		/*background:url(img/niao/00.png) 0 0 no-repeat;*/
+	}
+	ol li.act{
+		background:#dd0000;
+		/*background:url(img/niao/00.png) 0 -26px no-repeat;*/
+	}
+</style>
+
+<body>
+    <div class="box">
+		<div class="list">
+			<ul>
+	    		<li style="opacity: 1;"><img src="img/QQ图片20161221223925.jpg" alt=""/></li>
+	    		<li><img src="img/QQ图片20161221223946.jpg" alt=""/></li>
+	    		<li><img src="img/QQ图片20161225112450.jpg" alt=""/></li>
+	    		<li><img src="img/QQ图片20170128233202.jpg" alt=""/></li>
+	    		<li><img src="img/QQ图片20170211101626.gif" alt=""/></li>
+	    		<li><img src="img/@DC7H4CB)SCL5@W6J4Z}2S6.gif" alt=""/></li>
+	    	</ul>
+		</div>
+    	<div class="btn">
+    		<span class="l"></span>
+    		<span class="r"></span>
+    	</div>
+    	<ol>
+    		<li class="act"></li>
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    		<li></li>
+    	</ol>
+    </div>
+
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script type="text/javascript" src="js/hhe.js"></script>
+</body>
+</html>
