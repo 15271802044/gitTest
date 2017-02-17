@@ -12,12 +12,12 @@ $(function(){
         console.log(num);
     }
 
-    timer = setInterval(autoPlay,3000);
+    timer = setInterval(autoPlay,5000);
 
     $('.banner').mouseover(function(){
         clearInterval(timer);
     }).mouseout(function(){
-        timer = setInterval(autoPlay,3000);
+        timer = setInterval(autoPlay,5000);
     })
 
     $('.banner-dots ol li').click(function(){

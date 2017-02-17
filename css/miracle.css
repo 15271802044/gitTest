@@ -27,9 +27,9 @@ a{text-decoration: none;}
 span {position:absolute; top:50%; margin-top:-26px; width:52px; height:52px; cursor:pointer; opacity:0;}
 .banner:hover span { opacity:1;}
 .left {position:absolute; left:0; background:rgba(0,0,0,0.15);}
-.bor { float: left; width:52px; height:52px; background:url(../img/zuo.png) 15px 7px no-repeat;}
+.bor { float: left; width:52px; height:52px; background:url(../image/zuo.png) 15px 7px no-repeat;}
 .right { position:absolute; right:0; background:rgba(0,0,0,0.15);}
-.bor-one { float:right; width:52px; height:52px; background:url(../img/you.png) 15px 7px no-repeat;}
+.bor-one { float:right; width:52px; height:52px; background:url(../image/you.png) 15px 7px no-repeat;}
 .ol {position:absolute; bottom:10px; left:50%; margin-left:-75px; background:rgba(0,0,0,0.15); border-radius:20px; padding:10px 16px; opacity: 0; }
 .banner:hover .ol { opacity:1;}
 .ol a{
