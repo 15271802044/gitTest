@@ -1,5 +1,5 @@
-<!doctype html>
-<html>
+<!Doctype html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <title>计算器</title>
@@ -20,21 +20,16 @@
 		<div class="boxone">第一个数<input type="text" id="oneNum"/></div>
 		<div class="boxone">第二个数<input type="text" id="twoNum"/></div>
 		<div class="boxone">
-			<!--<button onclick="add()" type="button" id="add" class="button">+</button>
+			<button onclick="add()" type="button" id="add" class="button">+</button>
 			<button onclick="sub()" type="button" id="sub" class="button">-</button>
 			<button onclick="mul()" type="button" id="mul" class="button">*</button>
-			<button onclick="divide()" type="button" id="divide" class="button">/</button>-->
-			<button type="button" id="add" class="button">+</button>
-			<button type="button" id="sub" class="button">-</button>
-			<button type="button" id="mul" class="button">*</button>
-			<button type="button" id="divide" class="button">/</button>
+			<button onclick="divide()" type="button" id="divide" class="button">/</button>
 		</div>
 		<div class="boxone">计算结果<input type="text" id="result"/></div>
 	</div>
 
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-	<script>
-	    /*var Num1=document.getElementById("oneNum");
+	<script type="text/javascript">
+	    var Num1=document.getElementById("oneNum");
 		var Num2=document.getElementById("twoNum");
 		var result=document.getElementById("result");
 		
@@ -52,37 +47,7 @@
 		
 		function divide(){
 			result.value=parseFloat(Num1.value)/parseFloat(Num2.value);
-		}*/
-
-		
-		$('#add').click(function(){
-			var Num1 = $("#oneNum").val();
-		    var Num2 = $("#twoNum").val();
-			var jia = Num1*1+Num2*1;
-			$('#result').val( jia );
-		});
-		
-		$('#sub').click(function(){
-			var Num1 = $("#oneNum").val();
-		    var Num2 = $("#twoNum").val();
-			var jian = Num1*1-Num2*1;
-			$('#result').val( jian );
-		})
-		
-		$('#mul').click(function(){
-			var Num1 = $("#oneNum").val();
-			var Num2 = $("#twoNum").val();
-			var cheng = Num1*1*Num2*1;
-			$('#result').val( cheng );
-		})
-		
-		$('#divide').click(function(){
-			var Num1 = $("#oneNum").val();
-			var Num2 = $("#twoNum").val();
-			var chu = Num1*1/Num2*1;
-			$('#result').val( chu );
-		})
-		
+		}
 	</script>
 </body>
 </html>
